@@ -231,6 +231,8 @@ details[open] summary{margin-bottom:8px}
       <button role="tab" id="t-p6guide" aria-controls="p6guide"><span class="no">06-01-01</span>운영 비서 지침</button>
       <button role="tab" id="t-p6cs" aria-controls="p6cs"><span class="no">06-01-01</span>응대 기준표</button>
       <button role="tab" id="t-p6order" aria-controls="p6order"><span class="no">06-02-01</span>거래처별 발주서 업무 지시서 예시</button>
+      <button role="tab" id="t-p6inq" aria-controls="p6inq"><span class="no">06-02-02</span>풀결 문의 모음 파일</button>
+      <button role="tab" id="t-p6inqorder" aria-controls="p6inqorder"><span class="no">06-02-02</span>문의 정리 업무 지시서 예시</button>
       <button role="tab" id="t-p6reply" aria-controls="p6reply"><span class="no">06-02-03</span>답장 넣기 첫마디</button>
       <button role="tab" id="t-p6replyorder" aria-controls="p6replyorder"><span class="no">06-02-03</span>답장 넣기 업무 지시서 예시</button>
       <button role="tab" id="t-p6nda" aria-controls="p6nda"><span class="no">06-04-01</span>계약서 초안 업무 지시서 예시</button>
@@ -1015,6 +1017,64 @@ details[open] summary{margin-bottom:8px}
 
 이해 안 가는 건 한 번에 모아 질문해.</pre>
       <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6order_t').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
+    </div>
+  </section>
+  <section class="panel" role="tabpanel" id="p6inq" aria-labelledby="t-p6inq" hidden>
+    <div class="panel-head"><h2>풀결 문의 모음 파일</h2><p class="sub">풀결 가게에 밤사이 들어온 채널 문의 열 건이에요. 그대로 복사해 파일로 저장하거나 아래 링크로 내려받아 운영 비서 폴더에 넣어요.</p></div>
+    <div class="card">
+      <pre id="p6inq_t" style="white-space:pre-wrap;margin:0;font:inherit">채널,문의 일시,보낸 사람,문의 내용,주문번호
+카톡 채널,10/1 22:40,햇살맘,무기자차 선크림 언제 와요? 이틀째 배송 준비 중으로 나와요,2026100187664607
+카톡 채널,10/1 23:52,지수,병풀 세럼 받았는데 병이 깨져 있었고 바르고 나서 얼굴이 붉어졌어요. 전액 환불해 주세요,2026100197598351
+카톡 채널,10/2 00:21,민트초코,WELCOME10 쿠폰이 안 먹혀요,
+인스타 DM,10/2 00:37,beauty_hana,안녕하세요 뷰티 크리에이터예요. 무기자차 선크림 협찬 제안드려요. 제작비 150만 원입니다,
+네이버 톡톡,10/2 01:30,김**,병풀 세럼 어제 온다더니 아직 안 왔어요,2026100121424482
+인스타 DM,10/2 02:44,sunny_skin,무기자차 처음 써 보는데 백탁 심한가요?,
+네이버 톡톡,10/2 04:05,이**,무기자차 선크림 미개봉인데 색이 안 맞아서 교환하고 싶어요,2026100147795280
+네이버 톡톡,10/2 05:02,박**,배송은 늦었지만 백탁 없어서 좋아요,2026092902740
+카톡 채널,10/2 05:30,하루,제품 좋은데 펌프 용기면 더 좋겠어요,
+카톡 채널,10/2 06:48,오피스담당,회사 선물로 어성초 토너 50개 사려는데 25% 할인 되나요?,</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6inq_t').innerText);this.textContent='복사했어요'">그대로 복사</button> <a class="btn alt small" href="files/풀결_밤사이_채널문의_10-02.csv" download>CSV 내려받기</a></div>
+    </div>
+  </section>
+  <section class="panel" role="tabpanel" id="p6inqorder" aria-labelledby="t-p6inqorder" hidden>
+    <div class="panel-head"><h2>문의 정리 업무 지시서 예시</h2><p class="sub">그대로 복사해 【 】만 내 채널과 상황으로 바꿔요. 「운영 비서」 환경 새 대화 입력창에 붙여 넣고 보내요. 만들 시트 이름은 「문의 관리 대시보드」예요.</p></div>
+    <div class="card">
+      <pre id="p6inqorder_t" style="white-space:pre-wrap;margin:0;font:inherit">아래는 문의 정리 업무 지시서 예시야.
+【 】 표시된 곳을 내 상황에 맞게 바꾸려고 해.
+- 폴더의 응대 기준표를 먼저 읽고, 거기 없는 것만 한 번에 번호로 물어봐 줘. 질문마다 추천 답도 같이 줘
+
+진행 배경
+- 【카톡 채널·네이버 톡톡·인스타 DM】으로 밤사이 문의가 흩어져 들어와서, 아침마다 대표가 【세 곳】을 다 열어 보고 있어
+
+성공적인 결과
+- 구글 시트 한 파일에 '문의 기록' 탭과 '대시보드' 탭 두 개
+- 문의 기록 탭: 문의 일시 · 채널 · 고객 문의 · 답장 초안 · 처리 상태 · 대표 결정 · 보내기 승인 · 유형
+- 대시보드 탭: 들어온 문의 · 대표 확인 · 답장 쓴 것 · 같은 원인 묶음 카드, 처리 현황, 대표 확인 표, 답장 초안 표, 유형별·채널별 숫자, 맨 아래 제품 의견 한 줄
+- 대표가 정할 것은 줄 전체를 빨갛게 하고 계산과 추천을 붙여 줘
+- 나머지는 응대 기준표 말투로 답장 초안을 쓰고 보내기 승인 체크 칸을 둬
+- 처리 상태는 결정 대기 · 승인 대기 · 승인 완료 · 발송 완료
+- 칸 모양은 첨부한 꼴 그림 그대로(대표 확인 표 바로 아래 답장 초안 표, 채널 칸은 색 칩, 보내기 승인은 체크 모양, 제품 의견은 맨 아래 한 줄)
+
+업무 프로세스
+1. 문의 모음 파일을 읽어
+2. 문의마다 유형을 나눠(【문의 · 교환, 반품 · 불만 · 후기】)
+3. 응대 기준표의 「대표에게 넘길 것」으로 대표가 볼 것을 갈라
+4. 대표가 볼 것은 계산과 추천까지 붙여(추천은 추정이라고 표시)
+5. 나머지는 답장 초안을 써. 【교환 문의는 답장 초안으로】
+6. 원인이 같은 문의는 한데 묶어
+7. 자료가 없는 값(배송 늦는 이유·도착일 등)은 지어내지 말고 「확인 필요」로 비워
+8. 대시보드 숫자를 채워
+
+참고 자료
+- 【밤사이 들어온 채널 문의 모음 파일】(운영 비서 폴더)
+- 운영 비서 폴더의 응대 기준표
+- 꼴 그림(첨부)
+
+데드라인
+- 【매일 아침 9시 전】
+
+이해 안 가는 건 위처럼 한 번에 모아 질문해.</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6inqorder_t').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
     </div>
   </section>
   <section class="panel" role="tabpanel" id="p6reply" aria-labelledby="t-p6reply" hidden>
