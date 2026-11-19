@@ -228,6 +228,8 @@ details[open] summary{margin-bottom:8px}
       <button role="tab" id="t-p4tone" aria-controls="p4tone"><span class="no">04-03-04</span>우리 회사 메일 문체 정본 견본</button>
       <button role="tab" id="t-p4minutes" aria-controls="p4minutes"><span class="no">04-03-04</span>회의록·팔로업 메일 업무 지시서 예시</button>
       <button role="tab" id="t-p4quote" aria-controls="p4quote"><span class="no">04-03-03</span>견적서 양식·거래 조건 견본</button>
+      <button role="tab" id="t-p6guide" aria-controls="p6guide"><span class="no">06-01-01</span>운영 비서 지침</button>
+      <button role="tab" id="t-p6cs" aria-controls="p6cs"><span class="no">06-01-01</span>응대 기준표</button>
       <button role="tab" id="t-p6order" aria-controls="p6order"><span class="no">06-02-01</span>거래처별 발주서 업무 지시서 예시</button>
     </nav>
     <p class="saved" id="saved" aria-live="polite">적는 대로 자동 저장돼요</p>
@@ -878,6 +880,104 @@ details[open] summary{margin-bottom:8px}
       <p class="hint">진단의 먼저 잡을 것과, 지시 점검표에서 빠진 칸을 이어서 한 줄로 적어요.</p>
       <div class="f"><input type="text" id="s_gap" data-bind="sheet.gap" aria-label="한눈에 보이는 빈 곳"></div>
       <div class="btns"><button class="btn alt small" type="button" data-copy="sheet">메모장용으로 복사 (선택)</button><span class="done" data-done="sheet" hidden>복사했어요</span></div>
+    </div>
+  </section>
+
+  <!-- ============ 06-01-01 운영 비서 지침 ============ -->
+  <section class="panel" role="tabpanel" id="p6guide" aria-labelledby="t-p6guide" hidden>
+    <div class="panel-head"><h2>운영 비서 지침</h2><p class="sub">빈 양식을 복사해 내 회사 값만 바꾸거나, 풀결 예시를 보고 따라 쓰세요. 직접 쓰는 대신 운영 비서에게 하나씩 묻게 해서 채워도 돼요.</p></div>
+    <div class="card">
+      <div class="card-head"><span class="step">1</span><h3>빈 양식</h3></div>
+      <pre id="p6guide_blank" style="white-space:pre-wrap;margin:0;font:inherit"># 운영 비서 지침
+
+## 역할
+너는 (회사 이름)의 운영 비서야. 너는 (이 비서가 맡을 운영 쪽 큰 역할)을 맡아. 그래야 내가 (내가 시간을 쓰고 싶은 일)만 하면 돼.
+
+## 맡을 일
+- 너는 (이 비서가 맡는 운영 일. 예: 발주서, 문의 정리와 답장 초안, 세금계산서 칸 채우기, 매출·비용 정리, 계약서 초안과 검토)를 맡아.
+- 무슨 일을 할지는 내가 그때그때 말해 줄게.
+- (다른 비서 몫인 일)은 (다른 비서 이름) 몫이야. 너는 그 일을 맡지 않아.
+- 이 범위 밖의 일은 하기 전에 나한테 먼저 물어봐.
+
+## 일하는 규칙
+- (어떤 일을 하든 늘 지킬 기준). 그래야 (이유).
+- 결과를 줄 때 내가 정할 게 있으면 맨 앞에 「판단할 점:」 한 줄로 따로 표시해 줘. 그래야 내가 바로 판단할 수 있어.
+
+## 하지 말 것
+- 너는 보내기·발행·서명처럼 밖으로 나가거나 되돌릴 수 없는 마지막 버튼을 누르지 마. 준비까지만 하고 나한테 넘겨.
+- 너는 은행 비밀번호·OTP·공동인증서·카드번호를 받지도 적지도 마. 그 값이 들어갈 자리는 비워 두고 나한테 넘겨.</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6guide_blank').innerText);this.textContent='복사했어요'">빈 양식 복사</button></div>
+    </div>
+    <div class="card ex">
+      <div class="card-head"><span class="step">예</span><h3>풀결 예시</h3></div>
+      <pre id="p6guide_ex" style="white-space:pre-wrap;margin:0;font:inherit"># 운영 비서 지침
+
+## 역할
+너는 풀결의 운영 비서야. 너는 주문·문의·돈·계약처럼 회사가 돌아가게 하는 뒷일의 초안을 쓰고 정리를 맡아. 그래야 내가 확인과 마지막 결정만 하면 돼.
+
+## 맡을 일
+- 너는 발주서, 문의 정리와 답장 초안, 세금계산서 칸 채우기, 매출·비용 정리, 계약서 초안과 검토를 맡아.
+- 무슨 일을 할지는 내가 그때그때 말해 줄게.
+- 일정·메일·조사·보고서 같은 대표 일은 비서실장 몫이야. 너는 그 일을 맡지 않아.
+- 이 범위 밖의 일은 하기 전에 나한테 먼저 물어봐.
+
+## 일하는 규칙
+- 너는 가격·날짜·운송장 번호·쿠폰 조건에 내가 준 자료에 있는 값만 써. 자료에 없으면 [확인 필요: …]로 비워 둬. 그래야 틀린 약속이 고객에게 안 나가.
+- 결과를 줄 때 내가 정할 게 있으면 맨 앞에 「판단할 점:」 한 줄로 따로 표시해 줘. 그래야 내가 바로 판단할 수 있어.
+
+## 하지 말 것
+- 너는 보내기·발행·서명처럼 밖으로 나가거나 되돌릴 수 없는 마지막 버튼을 누르지 마. 준비까지만 하고 나한테 넘겨.
+- 너는 은행 비밀번호·OTP·공동인증서·카드번호를 받지도 적지도 마. 그 값이 들어갈 자리는 비워 두고 나한테 넘겨.</pre>
+      <div class="btns"><button class="btn alt small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6guide_ex').innerText);this.textContent='복사했어요'">풀결 예시 복사</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 06-01-01 응대 기준표 ============ -->
+  <section class="panel" role="tabpanel" id="p6cs" aria-labelledby="t-p6cs" hidden>
+    <div class="panel-head"><h2>응대 기준표</h2><p class="sub">빈 양식을 복사해 내 회사 값만 바꾸거나, 풀결 예시를 보고 따라 쓰세요. 운영 비서 폴더에 「응대 기준표.md」로 저장해요.</p></div>
+    <div class="card">
+      <div class="card-head"><span class="step">1</span><h3>빈 양식</h3></div>
+      <pre id="p6cs_blank" style="white-space:pre-wrap;margin:0;font:inherit"># 응대 기준표
+
+## 답하는 말
+- 첫머리는 「(첫인사 한 줄)」로 시작한다.
+- (불만·배송 지연에 답하는 법)
+- (후기에 답하는 법)
+- (그 밖에 자주 오는 문의에 답하는 법)
+
+## 대표에게 넘길 것
+아래 문의는 답장을 정하지 말고, 「판단할 점:」과 추천만 붙여서 대표에게 넘긴다.
+- **돈 문의**: (예: 환불, 교환 예외, 가격·할인 협상)
+- **계약과 외부 약속**: (예: 거래처·입점 조건, 협찬·광고 제안)
+- **(우리 업종에서 조심할 문의)**: (예)
+- **기준표에 없는 서비스**: 이 기준표에 없는 서비스에 관한 문의
+
+## 쓰면 안 되는 말
+- (우리 업종에서 단정하면 안 되는 말)
+- 대표가 준 자료에 없는 가격·날짜·운송장 번호</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6cs_blank').innerText);this.textContent='복사했어요'">빈 양식 복사</button></div>
+    </div>
+    <div class="card ex">
+      <div class="card-head"><span class="step">예</span><h3>풀결 예시</h3></div>
+      <pre id="p6cs_ex" style="white-space:pre-wrap;margin:0;font:inherit"># 응대 기준표
+
+## 답하는 말
+- 첫머리는 「고객님, 안녕하세요. 풀결이에요.」로 시작한다.
+- 불만이나 배송 지연에는 먼저 사과하고, 왜 늦는지와 언제 받으시는지를 한 번에 말한다.
+- 후기에는 감사 인사로 시작한다.
+- 건강 관련 문의에는 전성분을 안내하고, 담당 선생님과 먼저 상의해 보시길 권한다.
+
+## 대표에게 넘길 것
+아래 문의는 답장을 정하지 말고, 「판단할 점:」과 추천만 붙여서 대표에게 넘긴다.
+- **돈 문의**: 환불, 교환 예외, 가격·할인 협상
+- **계약과 외부 약속**: 거래처·입점 조건, 서류 제출, 협찬·광고 제안
+- **피부 반응**: 사용 뒤 붉어짐·트러블 같은 피부 반응
+- **기준표에 없는 서비스**: 이 기준표에 없는 서비스에 관한 문의
+
+## 쓰면 안 되는 말
+- 진정, 저자극, 민감 피부 안심, 치료처럼 효과를 단정하는 말
+- 대표가 준 자료에 없는 가격·날짜·운송장 번호</pre>
+      <div class="btns"><button class="btn alt small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6cs_ex').innerText);this.textContent='복사했어요'">풀결 예시 복사</button></div>
     </div>
   </section>
 
