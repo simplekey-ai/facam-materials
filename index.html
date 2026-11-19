@@ -228,6 +228,7 @@ details[open] summary{margin-bottom:8px}
       <button role="tab" id="t-p4tone" aria-controls="p4tone"><span class="no">04-03-04</span>우리 회사 메일 문체 정본 견본</button>
       <button role="tab" id="t-p4minutes" aria-controls="p4minutes"><span class="no">04-03-04</span>회의록·팔로업 메일 업무 지시서 예시</button>
       <button role="tab" id="t-p4quote" aria-controls="p4quote"><span class="no">04-03-03</span>견적서 양식·거래 조건 견본</button>
+      <button role="tab" id="t-p6order" aria-controls="p6order"><span class="no">06-02-01</span>거래처별 발주서 업무 지시서 예시</button>
     </nav>
     <p class="saved" id="saved" aria-live="polite">적는 대로 자동 저장돼요</p>
   </div>
@@ -877,6 +878,38 @@ details[open] summary{margin-bottom:8px}
       <p class="hint">진단의 먼저 잡을 것과, 지시 점검표에서 빠진 칸을 이어서 한 줄로 적어요.</p>
       <div class="f"><input type="text" id="s_gap" data-bind="sheet.gap" aria-label="한눈에 보이는 빈 곳"></div>
       <div class="btns"><button class="btn alt small" type="button" data-copy="sheet">메모장용으로 복사 (선택)</button><span class="done" data-done="sheet" hidden>복사했어요</span></div>
+    </div>
+  </section>
+
+  <!-- ============ 06-02-01 거래처별 발주서 업무 지시서 예시 ============ -->
+  <section class="panel" role="tabpanel" id="p6order" aria-labelledby="t-p6order" hidden>
+    <div class="panel-head"><h2>거래처별 발주서 업무 지시서 예시</h2><p class="sub">그대로 복사해 【 】만 내 상품이랑 거래처로 바꿔요. 「운영 비서」 환경 새 세션 입력창에 붙여 넣고 보내요.</p></div>
+    <div class="card">
+      <pre id="p6order_t" style="white-space:pre-wrap;margin:0;font:inherit">진행 배경
+- 매일 아침 스마트스토어 주문을 거래처 세 곳에 나눠 발주해
+- 오늘 주문 엑셀을 【주문】 폴더에 넣어 뒀어
+
+성공적인 결과
+- 모습: 거래처가 받자마자 출고할 수 있는 발주서 파일이 거래처마다 하나씩
+- 핵심 지표: 건수·수량이 주문 엑셀과 같다(끝에 검산 한 줄)
+- 보조 지표: 거래처 양식 모양(제목·머리칸·칸 순서·합계 줄)이 그대로다
+
+업무 프로세스
+1. 상품별 거래처: 【무기자차 선크림 = 온새미랩 · 병풀 세럼 = 다솜바이오 · 어성초 토너 = 마루온로지스】
+2. 【거래처 양식】 폴더의 양식 모양 그대로 채워
+3. 받는 분·연락처·주소는 주문한 사람 말고 받는 사람(수취인) 칸으로
+4. 한 주문에 다른 거래처 상품이 같이 있으면 요청 사항 앞에 「○○는 따로 출고돼요.」
+5. 발주번호는 【PO-오늘 날짜-001】부터, 거래처 상품코드는 【MR-T200】처럼 거래처 코드로
+6. 끝에 거래처별 건수·수량 검산 한 줄
+
+참고 자료
+- 【주문】 폴더의 주문 엑셀, 【거래처 양식】 폴더의 양식
+
+데드라인
+- 【오전 11시 출고 마감 전】
+
+이해 안 가는 건 한 번에 모아 질문해.</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6order_t').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
     </div>
   </section>
 
