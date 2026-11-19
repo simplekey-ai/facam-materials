@@ -236,7 +236,12 @@ details[open] summary{margin-bottom:8px}
       <button role="tab" id="t-p6inqorder" aria-controls="p6inqorder"><span class="no">06-02-02</span>문의 정리 업무 지시서 예시</button>
       <button role="tab" id="t-p6reply" aria-controls="p6reply"><span class="no">06-02-03</span>답장 넣기 첫마디</button>
       <button role="tab" id="t-p6replyorder" aria-controls="p6replyorder"><span class="no">06-02-03</span>답장 넣기 업무 지시서 예시</button>
-      <button role="tab" id="t-p6sales" aria-controls="p6sales"><span class="no">06-03-02</span>풀결 매출·비용 파일</button>
+      <button role="tab" id="t-p6taxtpl" aria-controls="p6taxtpl"><span class="no">06-03-01</span>세금계산서 관리 표 템플릿</button>
+      <button role="tab" id="t-p6taxcert" aria-controls="p6taxcert"><span class="no">06-03-01</span>풀결 거래처 가짜 등록증</button>
+      <button role="tab" id="t-p6taxorder" aria-controls="p6taxorder"><span class="no">06-03-01</span>세금계산서 업무 지시서 예시</button>
+      <button role="tab" id="t-p6sales" aria-controls="p6sales"><span class="no">06-03-02</span>풀결 채널 매출 파일</button>
+      <button role="tab" id="t-p6salescols" aria-controls="p6salescols"><span class="no">06-03-02</span>매출 볼 칸 템플릿</button>
+      <button role="tab" id="t-p6salesorder" aria-controls="p6salesorder"><span class="no">06-03-02</span>채널 매출 업무 지시서 예시</button>
       <button role="tab" id="t-p6nda" aria-controls="p6nda"><span class="no">06-04-01</span>계약서 초안 업무 지시서 예시</button>
       <button role="tab" id="t-p6contract" aria-controls="p6contract"><span class="no">06-04-02</span>계약서 불리한 조항 찾기 업무 지시서 예시</button>
       <button role="tab" id="t-p7guide" aria-controls="p7guide"><span class="no">07-01-01</span>마케팅 비서 지침</button>
@@ -1251,23 +1256,141 @@ details[open] summary{margin-bottom:8px}
   </section>
 
   <section class="panel" role="tabpanel" id="p6sales" aria-labelledby="t-p6sales" hidden>
-    <div class="panel-head"><h2>풀결 매출·비용 파일</h2><p class="sub">풀결 가게의 매출·비용 연습 파일이에요. 내려받아 운영 비서 폴더(매출비용)에 넣어요.</p></div>
+    <div class="panel-head"><h2>풀결 채널 매출 파일</h2><p class="sub">풀결 가게의 채널 주문 엑셀 셋이에요(칸 이름이 서로 달라요). 내려받아 운영 비서 폴더 「매출」에 넣어요.</p></div>
     <div class="card">
-      <div class="card-head"><h3>이번 달 파일 7개 (2026년 9월)</h3></div>
-      <div class="btns"><a class="btn small" href="06-03-02/급여대장_2026-09.xlsx" download>급여대장_2026-09.xlsx</a> <a class="btn small" href="06-03-02/법인카드_사용내역_2026-09.xlsx" download>법인카드_사용내역_2026-09.xlsx</a> <a class="btn small" href="06-03-02/스마트스토어_정산내역_2026-09.xlsx" download>스마트스토어_정산내역_2026-09.xlsx</a> <a class="btn small" href="06-03-02/자사몰_매출_2026-09.xlsx" download>자사몰_매출_2026-09.xlsx</a> <a class="btn small" href="06-03-02/쿠팡_정산내역_2026-09.xlsx" download>쿠팡_정산내역_2026-09.xlsx</a> <a class="btn small" href="06-03-02/통장_거래내역_2026-09.xlsx" download>통장_거래내역_2026-09.xlsx</a> <a class="btn small" href="06-03-02/품목별_원가표.xlsx" download>품목별_원가표.xlsx</a></div>
+      <div class="card-head"><h3>채널 엑셀 셋 (2026년 9월)</h3></div>
+      <div class="btns"><a class="btn small" href="06-03-02/스마트스토어_주문조회_2026-09.xlsx" download>스마트스토어_주문조회_2026-09.xlsx</a> <a class="btn small" href="06-03-02/쿠팡_판매내역_2026-09.xlsx" download>쿠팡_판매내역_2026-09.xlsx</a> <a class="btn small" href="06-03-02/자사몰_orders_2026-09.xlsx" download>자사몰_orders_2026-09.xlsx</a></div>
+    </div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="p6taxtpl" aria-labelledby="t-p6taxtpl" hidden>
+    <div class="panel-head"><h2>세금계산서 관리 표 템플릿</h2><p class="sub">노션에 표를 새로 만들고 이 칸 그대로 붙여 넣어요(풀결 가짜 거래처 넷). 비서한테 「이 칸으로 노션에 세금계산서 관리 표 만들어 줘」 해도 돼요.</p></div>
+    <div class="card">
+      <div class="card-head"><h3>칸 11개 · 연습 줄 넷</h3></div>
+      <div style="overflow-x:auto"><table style="border-collapse:collapse;font-size:13px"><tr><th style="border:1px solid #ccc;padding:4px 6px">서비스</th><th style="border:1px solid #ccc;padding:4px 6px">발행여부</th><th style="border:1px solid #ccc;padding:4px 6px">프로젝트명</th><th style="border:1px solid #ccc;padding:4px 6px">선금일</th><th style="border:1px solid #ccc;padding:4px 6px">선입금</th><th style="border:1px solid #ccc;padding:4px 6px">발행일자</th><th style="border:1px solid #ccc;padding:4px 6px">잔입금</th><th style="border:1px solid #ccc;padding:4px 6px">계약금</th><th style="border:1px solid #ccc;padding:4px 6px">부가세</th><th style="border:1px solid #ccc;padding:4px 6px">최종 발행금액</th><th style="border:1px solid #ccc;padding:4px 6px">파일</th></tr><tr><td style="border:1px solid #ccc;padding:4px 6px">화장품 납품</td><td style="border:1px solid #ccc;padding:4px 6px"></td><td style="border:1px solid #ccc;padding:4px 6px">결앤숲 9월 납품</td><td style="border:1px solid #ccc;padding:4px 6px">2026-09-05</td><td style="border:1px solid #ccc;padding:4px 6px">O</td><td style="border:1px solid #ccc;padding:4px 6px"></td><td style="border:1px solid #ccc;padding:4px 6px"></td><td style="border:1px solid #ccc;padding:4px 6px">1,500,000</td><td style="border:1px solid #ccc;padding:4px 6px">150,000</td><td style="border:1px solid #ccc;padding:4px 6px">1,650,000</td><td style="border:1px solid #ccc;padding:4px 6px">등록증.png</td></tr><tr><td style="border:1px solid #ccc;padding:4px 6px">화장품 납품</td><td style="border:1px solid #ccc;padding:4px 6px"></td><td style="border:1px solid #ccc;padding:4px 6px">담다상회 9월 납품</td><td style="border:1px solid #ccc;padding:4px 6px">2026-09-12</td><td style="border:1px solid #ccc;padding:4px 6px">O</td><td style="border:1px solid #ccc;padding:4px 6px"></td><td style="border:1px solid #ccc;padding:4px 6px"></td><td style="border:1px solid #ccc;padding:4px 6px">800,000</td><td style="border:1px solid #ccc;padding:4px 6px">80,000</td><td style="border:1px solid #ccc;padding:4px 6px">880,000</td><td style="border:1px solid #ccc;padding:4px 6px">등록증.png</td></tr><tr><td style="border:1px solid #ccc;padding:4px 6px">화장품 납품</td><td style="border:1px solid #ccc;padding:4px 6px"></td><td style="border:1px solid #ccc;padding:4px 6px">소소마켓 9월 납품</td><td style="border:1px solid #ccc;padding:4px 6px">2026-09-18</td><td style="border:1px solid #ccc;padding:4px 6px"></td><td style="border:1px solid #ccc;padding:4px 6px"></td><td style="border:1px solid #ccc;padding:4px 6px"></td><td style="border:1px solid #ccc;padding:4px 6px">1,200,000</td><td style="border:1px solid #ccc;padding:4px 6px">120,000</td><td style="border:1px solid #ccc;padding:4px 6px">1,320,000</td><td style="border:1px solid #ccc;padding:4px 6px">등록증.png</td></tr><tr><td style="border:1px solid #ccc;padding:4px 6px">화장품 납품</td><td style="border:1px solid #ccc;padding:4px 6px">발행 완료</td><td style="border:1px solid #ccc;padding:4px 6px">온새미로 8월 납품</td><td style="border:1px solid #ccc;padding:4px 6px">2026-08-20</td><td style="border:1px solid #ccc;padding:4px 6px">O</td><td style="border:1px solid #ccc;padding:4px 6px">2026-09-01</td><td style="border:1px solid #ccc;padding:4px 6px">O</td><td style="border:1px solid #ccc;padding:4px 6px">600,000</td><td style="border:1px solid #ccc;padding:4px 6px">60,000</td><td style="border:1px solid #ccc;padding:4px 6px">660,000</td><td style="border:1px solid #ccc;padding:4px 6px">등록증.png</td></tr></table></div>
+      <pre id="p6taxtpl_t" hidden>서비스	발행여부	프로젝트명	선금일	선입금	발행일자	잔입금	계약금	부가세	최종 발행금액	파일
+화장품 납품		결앤숲 9월 납품	2026-09-05	O			1,500,000	150,000	1,650,000	등록증.png
+화장품 납품		담다상회 9월 납품	2026-09-12	O			800,000	80,000	880,000	등록증.png
+화장품 납품		소소마켓 9월 납품	2026-09-18				1,200,000	120,000	1,320,000	등록증.png
+화장품 납품	발행 완료	온새미로 8월 납품	2026-08-20	O	2026-09-01	O	600,000	60,000	660,000	등록증.png</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6taxtpl_t').textContent);this.textContent='복사했어요'">표 복사(노션에 붙여 넣기)</button></div>
+    </div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="p6taxcert" aria-labelledby="t-p6taxcert" hidden>
+    <div class="panel-head"><h2>풀결 거래처 가짜 등록증</h2><p class="sub">연습용 견본 등록증이에요(실제 번호 아님). 내려받아 노션 표 「파일」 칸에 첨부해요.</p></div>
+    <div class="card">
+      <a href="06-03-01/풀결_거래처_가짜_등록증_견본.png" download><img src="06-03-01/풀결_거래처_가짜_등록증_견본.png" alt="가짜 사업자등록증 견본" style="width:100%;height:auto;border:1px solid var(--line,#ccc)"></a>
+      <div class="btns" style="margin-top:8px"><a class="btn alt small" href="06-03-01/풀결_거래처_가짜_등록증_견본.png" download>풀결_거래처_가짜_등록증_견본.png</a></div>
+    </div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="p6taxorder" aria-labelledby="t-p6taxorder" hidden>
+    <div class="panel-head"><h2>세금계산서 업무 지시서 예시</h2><p class="sub">그대로 복사해 「운영 비서」 새 대화에 붙여 넣고 【 】만 내 것으로 바꿔요. 검수·예약 한마디는 같은 대화에 이어서 보내요.</p></div>
+    <div class="card">
+      <div class="card-head"><h3>업무 지시서</h3></div>
+      <pre id="p6taxorder_t" style="white-space:pre-wrap;margin:0;font:inherit">진행 배경
+- 매달 1일에 지난달 거래처별 세금계산서를 발행해
+- 거래처 정보와 사업자등록증은 노션 「세금계산서 관리」 표에 올려 둬
+
+성공적인 결과
+- 모습: 노션 표에서 이번 달 발행할 줄이 전부 팝빌로 발행되고 「발행여부」가 발행 완료로 바뀜
+- 핵심 지표: 발행한 건수와 합계가 노션 표와 같다(끝에 한 줄로)
+
+업무 프로세스
+1. 노션 「세금계산서 관리」 표에서 발행여부가 비어 있는 줄을 읽어
+2. 사업자등록증 파일을 읽어서 상호·등록번호·대표자를 노션 값과 맞춰 봐
+3. 팝빌 사업자등록상태조회로 계속사업자인지 확인해. 아니면 그 줄은 멈춰
+4. 팝빌 API로 발행하고, 노션 발행여부를 발행 완료로 바꿔
+5. 끝에 발행 건수·합계·멈춘 줄을 한 번에 알려 줘
+
+참고 자료
+- 노션 「세금계산서 관리」 표 · 우리 회사 정보(운영 비서 폴더 「공급자 정보.md」)
+- 팝빌 키 파일: 【~/AI 비서실/키 보관/팝빌 키.txt】(대화에 붙여 넣지 말고 파일에서 읽어)
+- 지금은 팝빌 테스트 환경
+
+데드라인
+- 매달 1일 오전 중
+
+이해 안 가는 건 한 번에 모아 질문해.</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6taxorder_t').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
     </div>
     <div class="card">
-      <div class="card-head"><h3>4~8월 기록 파일</h3></div>
-      <div class="btns"><a class="btn alt small" href="06-03-02/풀결_매출비용_기록_2026-04~08.xlsx" download>풀결_매출비용_기록_2026-04~08.xlsx</a></div>
+      <div class="card-head"><h3>검수 한마디(6-2)</h3></div>
+      <pre id="p6taxorder_r" style="white-space:pre-wrap;margin:0;font:inherit">2번 다음에 검수를 넣어 줘. 별도 검수자(서브 에이전트)에게 등록증 파일만 주고 노션 값은 보여 주지 말고 따로 읽혀서, 네 값 · 검수자 값 · 노션 값 셋이 다 같을 때만 다음으로 가. 하나라도 다르면 그 줄은 멈추고 어느 칸이 다른지 알려 줘.</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6taxorder_r').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
     </div>
     <div class="card">
-      <div class="card-head"><h3>대시보드 모양 그림 3장</h3></div>
-      <div style="display:grid;gap:12px">
-        <a href="06-03-02/대시보드_모양_1.png" download><img src="06-03-02/대시보드_모양_1.png" alt="대시보드 모양 1" style="width:100%;height:auto;border:1px solid var(--line,#ccc);border-radius:6px"></a>
-        <a href="06-03-02/대시보드_모양_2.png" download><img src="06-03-02/대시보드_모양_2.png" alt="대시보드 모양 2" style="width:100%;height:auto;border:1px solid var(--line,#ccc);border-radius:6px"></a>
-        <a href="06-03-02/대시보드_모양_3.png" download><img src="06-03-02/대시보드_모양_3.png" alt="대시보드 모양 3" style="width:100%;height:auto;border:1px solid var(--line,#ccc);border-radius:6px"></a>
-      </div>
-      <div class="btns" style="margin-top:8px"><a class="btn alt small" href="06-03-02/대시보드_모양_1.png" download>대시보드_모양_1.png</a> <a class="btn alt small" href="06-03-02/대시보드_모양_2.png" download>대시보드_모양_2.png</a> <a class="btn alt small" href="06-03-02/대시보드_모양_3.png" download>대시보드_모양_3.png</a></div>
+      <div class="card-head"><h3>예약 한마디(7-1)</h3></div>
+      <pre id="p6taxorder_y" style="white-space:pre-wrap;margin:0;font:inherit">이 순서를 &#x27;매월 세금계산서 발행&#x27; 스킬로 저장하고, 매달 1일 아침 9시에 돌게 예약해 줘</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6taxorder_y').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
+    </div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="p6salescols" aria-labelledby="t-p6salescols" hidden>
+    <div class="panel-head"><h2>매출 볼 칸 템플릿</h2><p class="sub">볼 칸 여섯 개와, 채널마다 다른 칸 이름을 어떻게 맞추는지 예시예요. 내 채널 이름으로 바꿔 써요.</p></div>
+    <div class="card">
+      <div class="card-head"><h3>볼 칸 여섯 · 맞춤 예시</h3></div>
+      <pre id="p6salescols_t" style="white-space:pre-wrap;margin:0;font:inherit">## 로우 탭에 쌓을 여섯 칸
+| 칸 | 뜻 | 모양 |
+|---|---|---|
+| 날짜 | 주문한 날 | YYYY-MM-DD |
+| 채널 | 판 곳 | 스마트스토어 · 쿠팡 · 자사몰 |
+| 주문번호 | 채널이 준 번호 | 글자 그대로 |
+| 상품 | 상품 이름(채널마다 같은 이름으로) | 말머리·옵션 뗌 |
+| 수량 | 판 개수 | 숫자 |
+| 금액 | 고객이 낸 상품 금액 | 원, 배송비·수수료 빼고 |
+
+## 채널별 원래 칸 이름 맞춤 예시
+| 볼 칸 | 스마트스토어 | 쿠팡 | 자사몰 |
+|---|---|---|---|
+| 날짜 | 주문일시(2026-09-01 14:22 → 날짜만) | 주문일(2026.09.01) | order_date(20260901) |
+| 주문번호 | 상품주문번호 | 주문번호 | order_id |
+| 상품 | 상품명 | 노출상품명(「[풀결]」 뗌) | product_name |
+| 수량 | 수량 | 구매수 | qty |
+| 금액 | 상품별 총 주문금액 | 결제액 | total_amount |
+| (안 씀) | 옵션정보 · 배송비 | 판매수수료 | unit_price |</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6salescols_t').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
+    </div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="p6salesorder" aria-labelledby="t-p6salesorder" hidden>
+    <div class="panel-head"><h2>채널 매출 업무 지시서 예시</h2><p class="sub">그대로 복사해 「운영 비서」 새 대화에 붙여 넣고 【 】만 내 것으로 바꿔요. 검수·예약 한마디는 같은 대화에 이어서 보내요.</p></div>
+    <div class="card">
+      <div class="card-head"><h3>업무 지시서</h3></div>
+      <pre id="p6salesorder_t" style="white-space:pre-wrap;margin:0;font:inherit">진행 배경
+- 매달 초 스마트스토어·쿠팡·자사몰 매출을 한 번에 보고 싶어
+- 채널 엑셀 셋을 【매출】 폴더에 넣어 뒀어. 채널마다 칸 이름이 달라
+
+성공적인 결과
+- 모습: 구글 시트 「채널 매출 대시보드」에 로우 탭 하나 + 대시보드 탭
+- 핵심 지표: 로우 탭 금액 합계가 채널 엑셀 셋 합계와 같다(끝에 한 줄로)
+
+업무 프로세스
+1. 볼 칸은 날짜 · 채널 · 주문번호 · 상품 · 수량 · 금액 여섯 개
+2. 채널마다 뜻이 같은 칸을 위 여섯 칸으로 맞추고, 어떤 칸을 어떤 칸으로 맞췄는지 표로 보여 줘
+3. 맞춘 줄을 「로우」 탭 한 곳에 쌓아. 같은 주문번호는 한 번만
+4. 대시보드 탭은 로우 탭에서만 계산해: 매출 추이(날짜별) · 채널별 매출 · 상품별 매출
+5. 끝에 채널별 합계와 로우 탭 합계를 나란히 한 줄로
+
+참고 자료
+- 【매출】 폴더의 채널 엑셀 셋
+
+데드라인
+- 오늘 중
+
+이해 안 가는 건 한 번에 모아 질문해.</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6salesorder_t').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h3>검수 한마디(6-1)</h3></div>
+      <pre id="p6salesorder_r" style="white-space:pre-wrap;margin:0;font:inherit">검수를 넣어 줘. 별도 검수자(서브 에이전트)에게 채널 엑셀 원본만 주고 채널별 금액 합계를 따로 세게 해서, 로우 탭 합계와 같을 때만 끝내. 다르면 어느 채널이 얼마 다른지 알려 줘.</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6salesorder_r').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h3>예약 한마디(7-1)</h3></div>
+      <pre id="p6salesorder_y" style="white-space:pre-wrap;margin:0;font:inherit">이 순서를 &#x27;채널 매출 정리&#x27; 스킬로 저장하고, 매달 1일 아침 9시에 돌게 예약해 줘</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6salesorder_y').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
     </div>
   </section>
 
