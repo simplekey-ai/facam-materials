@@ -220,8 +220,10 @@ details[open] summary{margin-bottom:8px}
       <button role="tab" id="t-intro" aria-controls="intro"><span class="no">03-02-01</span>회사 소개서 인터뷰 프롬프트</button>
       <button role="tab" id="t-msample" aria-controls="msample"><span class="no">03-03-01</span>아침 메일 브리핑 완성 샘플</button>
       <button role="tab" id="t-morder" aria-controls="morder"><span class="no">03-03-01</span>아침 메일 브리핑 업무 지시서</button>
+      <button role="tab" id="t-p4sched" aria-controls="p4sched"><span class="no">04-01-01</span>일정 규칙 인터뷰 문장</button>
       <button role="tab" id="t-p4mkt" aria-controls="p4mkt"><span class="no">04-02-01</span>시장 조사 업무 지시서 예시</button>
       <button role="tab" id="t-p4comp" aria-controls="p4comp"><span class="no">04-02-02</span>경쟁사 분석 업무 지시서 예시</button>
+      <button role="tab" id="t-p4target" aria-controls="p4target"><span class="no">04-03-01</span>타깃 리서치 업무 지시서 예시</button>
       <button role="tab" id="t-p4memo" aria-controls="p4memo"><span class="no">04-03-02</span>결앤숲 미팅 메모 견본</button>
       <button role="tab" id="t-p4prop" aria-controls="p4prop"><span class="no">04-03-02</span>입점 제안서 업무 지시서 예시</button>
       <button role="tab" id="t-p4qorder" aria-controls="p4qorder"><span class="no">04-03-03</span>견적서 업무 지시서 예시</button>
@@ -229,6 +231,7 @@ details[open] summary{margin-bottom:8px}
       <button role="tab" id="t-p4minutes" aria-controls="p4minutes"><span class="no">04-03-04</span>회의록·팔로업 메일 업무 지시서 예시</button>
       <button role="tab" id="t-p4quote" aria-controls="p4quote"><span class="no">04-03-03</span>견적서 양식·거래 조건 견본</button>
       <button role="tab" id="t-p5ego" aria-controls="p5ego"><span class="no">05-02-02</span>ego lite 받는 곳</button>
+      <button role="tab" id="t-p5git" aria-controls="p5git"><span class="no">05-02-03</span>GitHub 백업 글</button>
       <button role="tab" id="t-p6guide" aria-controls="p6guide"><span class="no">06-01-01</span>운영 비서 지침</button>
       <button role="tab" id="t-p6cs" aria-controls="p6cs"><span class="no">06-01-01</span>응대 기준표</button>
       <button role="tab" id="t-p6order" aria-controls="p6order"><span class="no">06-02-01</span>거래처별 발주서 업무 지시서 예시</button>
@@ -292,6 +295,11 @@ details[open] summary{margin-bottom:8px}
 ## 하지 말 것
 - 가격·발주·환불처럼 돈이 걸린 결정은 네가 정하지 말고 나한테 물어봐. 그건 내가 정해. 단가표에 이미 있는 값은 그대로 써도 돼.</pre>
       <div class="btns"><button class="btn alt small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('jd_ex').innerText);this.textContent='복사했어요'">풀결 예시 복사</button></div>
+    </div>
+    <div class="card ex">
+      <div class="card-head"><span class="step">묻</span><h3>비서가 묻게 하는 인터뷰 문장</h3></div>
+      <pre id="jd_q" style="white-space:pre-wrap;margin:0;font:inherit">직무기술서를 쓰려고 해. 이 비서 이름은 총괄 비서야. 역할, 맡을 일, 일하는 규칙, 하지 말 것, 이 네 칸을 채울 수 있게 나한테 하나씩 질문해 줘. 질문마다 추천 답도 같이 주고, 내 클로드 지침에 이미 있는 건 다시 묻지 마. 맡을 일은 범위만 묻고, 일하는 규칙과 하지 말 것은 어느 일에나 통하는 것만 물어봐 줘. 완성본은 문서 말고 채팅에, 「너는 …」처럼 너한테 말하는 말투로 써 줘.</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('jd_q').innerText);this.textContent='복사했어요'">인터뷰 문장 복사</button></div>
     </div>
   </section>
 
@@ -397,6 +405,15 @@ details[open] summary{margin-bottom:8px}
 
 이해 안 가는 건 질문해.</pre>
       <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('morder_t').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 04-01-01 일정 규칙 인터뷰 문장 ============ -->
+  <section class="panel" role="tabpanel" id="p4sched" aria-labelledby="t-p4sched" hidden>
+    <div class="panel-head"><h2>일정 규칙 인터뷰 문장</h2><p class="sub">그대로 복사해 총괄 비서 프로젝트 새 대화에 붙여 넣어요. 비서가 일곱 칸을 하나씩 묻고, 다 답하면 한 장으로 정리해 줘요.</p></div>
+    <div class="card">
+      <pre id="p4sched_t" style="white-space:pre-wrap;margin:0;font:inherit">내 일정 규칙을 같이 만들고 싶어. 나한테 하나씩 질문해 줘. 일하는 시간대, 미팅 받는 요일과 시간, 미팅 사이 쉬는 시간, 이동 시간, 집중해서 일하는 시간, 절대 일정 안 넣는 시간, 캘린더 종류와 색까지. 다 묻고 나면 한 장으로 정리해 줘.</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p4sched_t').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
     </div>
   </section>
 
@@ -508,6 +525,45 @@ details[open] summary{margin-bottom:8px}
   </section>
 
   <!-- ============ 04-03-02 결앤숲 미팅 메모 견본 ============ -->
+  <!-- ============ 04-03-01 타깃 리서치 업무 지시서 예시 ============ -->
+  <section class="panel" role="tabpanel" id="p4target" aria-labelledby="t-p4target" hidden>
+    <div class="panel-head"><h2>타깃 리서치 업무 지시서 예시</h2><p class="sub">그대로 복사해 【 】 표시된 곳만 내 상품과 찾을 가게로 바꿔요. 카카오맵 탭에 붙은 클로드 창에 붙여 넣어요.</p></div>
+    <div class="card">
+      <pre id="p4target_t" style="white-space:pre-wrap;margin:0;font:inherit">아래는 새 상품을 누구에게 먼저 팔지 찾는 업무 지시서 예시야.
+【 】 표시된 곳을 내 상황에 맞게 바꾸려고 해.
+- 물어볼 것을 한 번에 모아 번호로 물어봐 줘. 질문마다 추천 답도 같이 줘
+- 회사·고객 정보는 아래 「참고 자료」 칸에 붙여 넣은 회사 소개서 요점을 보고, 거기 없는 것만 물어봐
+- 내가 답하면 바뀐 지시서를 한 번에 보여 줘
+
+진행 배경
+- 【새 무기자차 선크림】을 【매장·편집숍】 중 누구에게 먼저 팔지 정해야 해
+- 아는 곳(시트에 이미 있음): 【덕분애 제로웨이스트샵 · 햇빛상점 · 해달별 제로웨이스트샵】
+
+성공적인 결과
+- 모습: 구글 시트 「입점처 영업 리스트」에 실제 매장이 한 줄씩 쌓이고, 상·중·하 색을 보고 먼저 연락할 곳을 바로 정할 수 있다
+- 핵심 지표: 「잠재 고객」 칸의 상·중·하 색
+- 보조 지표: 업체마다 대표 전화와 지도 링크
+
+업무 프로세스
+1. 카카오맵에서 【내 상품을 놓아 줄 만한 매장】을 직접 검색하고, 눌러서 나온 값을 옮겨 줘(이름을 지어내지 않음)
+2. 시트에 한 곳당 한 줄씩: 업체명 · 지역 · 업종 · 비건/친환경 근거 · 대표 전화 · 지도 · 잠재 고객(상/중/하) · 【내 회사】와 맞는 이유
+3. 대표 전화는 지도에 공개된 매장 대표번호만, 010으로 시작하는 번호는 넣지 않음
+4. 우선순위는 상/중/하 드롭다운으로 골라 색이 칠해지게
+5. 못 찾으면 못 찾았다고 적어
+
+참고 자료
+- 회사 소개서 요점(여기에 붙여 넣음), 칸 머리와 아는 곳 세 줄이 있는 구글 시트, 로그인하지 않은 카카오맵(map.kakao.com)
+
+데드라인
+- 【오늘 안에】
+
+이해 안 가는 건 위처럼 한 번에 모아 질문해.
+
+추천 답대로 바로 진행해. 질문 없이 카카오맵에서 찾아서 시트에 채워 줘.</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p4target_t').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
+    </div>
+  </section>
+
   <section class="panel" role="tabpanel" id="p4memo" aria-labelledby="t-p4memo" hidden>
     <div class="panel-head"><h2>결앤숲 미팅 메모 견본</h2><p class="sub">연습용 미팅 메모 열 줄이에요. 그대로 붙여 넣고, 내 미팅이면 회의 녹음을 글로 옮긴 것이나 메모를 넣어요.</p></div>
     <div class="card">
@@ -729,6 +785,20 @@ details[open] summary{margin-bottom:8px}
     <div class="card">
       <p style="margin:0"><a id="p5ego_t" href="https://lite.ego.app" target="_blank" rel="noopener">https://lite.ego.app</a></p>
       <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p5ego_t').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
+    </div>
+  </section>
+
+  <!-- ============ 05-02-03 GitHub 백업 글 ============ -->
+  <section class="panel" role="tabpanel" id="p5git" aria-labelledby="t-p5git" hidden>
+    <div class="panel-head"><h2>GitHub 백업 글</h2><p class="sub">그대로 복사해 AI 비서실 폴더를 연 Code 탭 새 대화에 붙여 넣어요. 깃허브 가입을 마친 뒤에 써요.</p></div>
+    <div class="card">
+      <pre id="p5git_t" style="white-space:pre-wrap;margin:0;font:inherit">AI 비서실 폴더를 깃허브에 백업해 줘.
+1. 이 폴더를 저장(커밋)할 수 있게 준비해 줘. 비밀번호나 키가 든 파일, .claude 폴더 안의 settings로 시작하는 설정 파일은 저장에서 빼 줘.
+2. 저장할 때 작성자는 내 깃허브 계정으로, 이메일은 깃허브 noreply 주소로 해 줘.
+3. 첫 저장을 하고, 깃허브에 ai-office라는 비공개 저장소를 만들어서 올려 줘.
+4. 다 되면 저장소 주소와 비공개로 올라갔는지 알려 줘.
+5. 답은 한국어로만 써 줘.</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p5git_t').innerText);this.textContent='복사했어요'">그대로 복사</button></div>
     </div>
   </section>
 
@@ -954,6 +1024,11 @@ details[open] summary{margin-bottom:8px}
 - 너는 보내기·발행·서명처럼 밖으로 나가거나 되돌릴 수 없는 마지막 버튼을 누르지 마. 준비까지만 하고 나한테 넘겨.
 - 너는 은행 비밀번호·OTP·공동인증서·카드번호를 받지도 적지도 마. 그 값이 들어갈 자리는 비워 두고 나한테 넘겨.</pre>
       <div class="btns"><button class="btn alt small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6guide_ex').innerText);this.textContent='복사했어요'">풀결 예시 복사</button></div>
+    </div>
+    <div class="card ex">
+      <div class="card-head"><span class="step">묻</span><h3>운영 비서 지침을 묻게 해서 채우는 지시서</h3></div>
+      <pre id="p6guide_q" style="white-space:pre-wrap;margin:0;font:inherit">운영 비서 지침을 쓰려고 해. 이 비서 이름은 운영 비서야. 역할, 맡을 일, 일하는 규칙, 하지 말 것, 이 네 칸을 채울 수 있게 나한테 하나씩 질문해 줘. 질문마다 추천 답도 같이 주고, 공통 지침에 이미 있는 건 다시 묻지 마. 맡을 일은 범위만 묻고, 일하는 규칙과 하지 말 것은 어느 일에나 통하는 것만 물어봐 줘. 다 채우면 「너는 …」처럼 너한테 말하는 말투로 운영 비서 지침에 넣어 줘.</pre>
+      <div class="btns"><button class="btn small" type="button" onclick="navigator.clipboard.writeText(document.getElementById('p6guide_q').innerText);this.textContent='복사했어요'">지시서 복사</button></div>
     </div>
   </section>
 
