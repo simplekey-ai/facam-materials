@@ -1596,6 +1596,27 @@ details[open] summary{margin-bottom:8px}
 </div>
 
 <script>
+/* 오픈일 잠금(지영님 11/21 02:53 「다른 수강생들은 못보게 탭 잠금해줘 우리만 관리하게 · 오픈일에 열리게해」)
+   파트 2~6 = 2차 오픈 2026-12-04, 파트 7 이후 = 최종 오픈 2026-12-24 (한국 시각 0시). 그 전엔 탭·내용을 화면에서 지움.
+   관리자 보기: 주소 끝에 ?staff=simplekey-open 을 한 번 붙여 열면 이 브라우저에선 계속 보임(?staff=off 로 끔). */
+(function(){
+  try{var q=new URLSearchParams(location.search).get("staff");
+    if(q==="simplekey-open")localStorage.setItem("facamStaff","1");
+    if(q==="off")localStorage.removeItem("facamStaff");}catch(e){}
+  var staff=false;try{staff=localStorage.getItem("facamStaff")==="1";}catch(e){}
+  var kst=new Date(Date.now()+9*3600*1000).toISOString().slice(0,10);
+  function openDay(part){return part<=1?"2000-01-01":(part<=6?"2026-12-04":"2026-12-24");}
+  [].slice.call(document.querySelectorAll('[role=tab]')).forEach(function(t){
+    var no=(t.querySelector(".no")||{}).textContent||"", m=no.match(/^(\d\d)-/);
+    if(!m)return; var d=openDay(parseInt(m[1],10));
+    if(kst>=d)return;
+    if(staff){t.title="🔒 "+d+" 오픈 · 관리자 보기";t.style.opacity=".55";return;}
+    var p=document.getElementById(t.getAttribute("aria-controls")); if(p)p.remove(); t.remove();
+  });
+  if(staff){var b=document.createElement("div");b.textContent="관리자 보기: 흐린 탭은 오픈일 전(수강생에겐 안 보임)";b.style.cssText="position:fixed;bottom:8px;left:8px;background:#222;color:#fff;font-size:12px;padding:4px 8px;border-radius:6px;z-index:9";document.body.appendChild(b);}
+})();
+</script>
+<script>
 (function(){
   function $(id){return document.getElementById(id);}
   function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
